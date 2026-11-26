@@ -1,0 +1,18 @@
+App(
+    appid="axd_recon",
+    name="AxD Recon",
+    apptype=FlipperAppType.EXTERNAL,
+    targets=["f7"],
+    entry_point="axd_recon_app",
+    stack_size=4 * 1024,
+    icon="axd_recon_10px.png",
+    fap_icon="axd_recon_10px.png",
+    fap_category="GPIO",
+    fap_version="1.0",
+    fap_description="Passive AxD orange-port bridge: recon, wardrive, fleet",
+    sources=[
+        "src/axd_protocol.c",
+        "src/axd_session.c",
+        "src/axd_recon.c",
+    ],
+)

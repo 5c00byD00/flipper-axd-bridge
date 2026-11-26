@@ -1,0 +1,7 @@
+.ufbt/
+.build/
+.vscode/
+dist/debug/
+*.o
+tests/test_protocol
+__pycache__/
